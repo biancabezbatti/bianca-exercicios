@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let maiores = 0;
+    let menores = 0;
+
+    let idade = Number(prompt("Digite uma idade (0 para):"))
+
+    while(idade !==0){
+        if(idade >=18){
+            maiores++;
+        }else{
+            menores++;
+        }
+        idade = Number(prompt("Digite outra idade (0 para parar)"));
+
+    }
+    document.write("mairores de idade" + maiores + "<br>")
+    document.write("mairores de idade" + menores)
+    </script>
+</body>
+</html>

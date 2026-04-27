@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com do while</title>
+</head>
+<body>
+    <h1> Exemplo com do while</h1>
+    <script>
+        let contador = 1
+        let contpares = 0
+        let contimpares = 0
+        do{
+            let numero = parseInt(prompt('Informe um número'))
+            if(numero % 2 == 0){
+                contpares++
+            }else{
+                contimpares++
+            }
+
+        } while (contador <=10)
+        document.write('Qt números pares ' + contpares)
+        document.write('Qt números ímpares ' + contimpares)
+    </script>
+</body>
+</html>

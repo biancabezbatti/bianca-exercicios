@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>✊ Pedra ✋ Papel ✌️ Tesoura</h1>
+
+    <h2>Escolha uma opção:</h2>
+
+    <div class="opcoes">
+        <img src="img/pedra.png" onclick="jogar('pedra')">
+        <img src="img/papel.png" onclick="jogar('papel')">
+        <img src="img/tesoura.png" onclick="jogar('tesoura')">
+    </div>
+
+    <h2>Resultado</h2>
+
+    <div class="resultado">
+        <div>
+            <p>Você</p>
+            <img id="imgJogador" src="img/pedra.png">
+        </div>
+
+        <div>
+            <p>Computador</p>
+            <img id="imgPc" src="img/pedra.png">
+        </div>
+    </div>
+
+    <h2 id="mensagem"></h2>
+
+    <!-- PONTUAÇÃO -->
+    <h2>Pontuação</h2>
+    <p>Você: <span id="pontosJogador">0</span></p>
+    <p>Computador: <span id="pontosPc">0</span></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

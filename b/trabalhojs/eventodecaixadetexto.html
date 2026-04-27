@@ -1,0 +1,16 @@
+<p id="texto2">Fora do campo</p>
+
+<input 
+  onfocus="entrar()" 
+  onblur="sair()" 
+  placeholder="Clique aqui">
+
+<script>
+function entrar() {
+  document.getElementById("texto2").innerText = "Voce entrou no campo";
+}
+
+function sair() {
+  document.getElementById("texto2").innerText = "Voce saiu do campo";
+}
+</script>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+
+        /* direcionamento de fluxo  */
+        /* flex-direction row é para deixar as divs uma do lado da outra  */
+        flex-direction: row;
+
+        /* flex-direction column é para deixar um embaixo do outro  */
+        /* flex-direction: column; */
+
+        /* o justify-content serve para mudar onde o texto fica, se é do lado 
+        esquerdo o padrão ou do direito, um separado do outro, ou cada um em 
+        um canto por exemplo, pode colocar onde quiser.*/
+        /* justify-content: center; */
+        /* justify-content: right; */
+        justify-content: space-around;
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+    }
+    .box{
+        width: 150px;
+        height: 100px;
+        background-color: palevioletred;
+        color: white;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        /* padding - espaçamento interno para as bordas  */
+        padding: 5px;
+
+    }
+    .box2{
+        width: 300px;
+        height: 100px;
+        background-color: aqua;
+        color: blue;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+        padding-left: 25px;
+        /* padding: 5px 10px 40px 25px; */
+        /* estiliza os 4 lados:
+        5px - superior
+        10px - lado direito
+        40px - lado inferior
+        25px - lado esquerdo
+        padding: 5px 10px 40px 25px;
+        */
+    }
+    .box3{
+        width: 300px;
+        height: 100px;
+        background-color: brown;
+        padding: 5px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+        padding-left: 25px;
+    }
+    .botao{
+        padding: 20px;
+        background-color: pink;
+        color: black;
+
+        /* no cursor quando coloca o mouse em cima fica com uma mão de selecionar */
+        cursor: pointer;
+
+        /* border-radius faz cantos arredondados  */
+        border-radius: 7px;
+
+        /* tira a borda que fica ao redor do botão, é mais '' por estética */
+        border: none;
+
+
+    }
+
+</style>
+
+<body>
+    <!-- o div class container é como se fosse uma mãe e as divs os filhos -->
+    <div class = "container">
+        <div class = "box">
+            Div são containers que permitem fazer divisões de página que quando não 
+            são estilizadas, não podemos perceber o efeito.
+        </div>
+        <div class = 'box'>
+            Div são containers que permitem fazer divisões de página que quando não 
+            são estilizadas, não podemos perceber o efeito.
+        </div>
+        <div class = 'box'>
+            Div são containers que permitem fazer divisões de página que quando não 
+            são estilizadas, não podemos perceber o efeito.
+        </div>
+        <div class = 'box2'>
+            Div são containers que permitem fazer divisões de página que quando não 
+            são estilizadas, não podemos perceber o efeito.
+        </div>
+        <div class = 'box3'>
+            Div são containers que permitem fazer divisões de página que quando não 
+            são estilizadas, não podemos perceber o efeito.
+        </div>
+    </div>
+    <button class = "botao">Clique aqui</button>
+    
+</body>
+</html>

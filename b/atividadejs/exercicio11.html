@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let solteiros = 0;
+        let casados = 0;
+        let divorciados = 0;
+        let viuvos = 0;
+
+        let continuar = "s"
+        while(continuar.toLocaleLowerCase() === "s"){
+        let nome = prompt("Digite o nome:");
+        let estado = prompt("Estado civil(solteiro, casado, divorciado, viuvo): ");
+
+        if (estado === "solteiro") solteiros++;
+        if (estado === "casado") casado++;
+        if (estado === "divorciado") divorciados++;
+        if (estado === "viuvo") viuvos++;
+
+        continuar = prompt("Deseja continuar? (s/n)");
+
+    }
+    document.write("Solteiros: " + solteiros + "<br>");
+    document.write("Casados: " + casados + "<br>");
+    document.write("Divorciados: " + divorciados + "<br>");
+    document.write("Viuvos: " + viuvos + "<br>");
+    </script>
+</body>
+</html>
