@@ -1,4 +1,5 @@
 const opcoes = ["pedra", "papel", "tesoura"]
+const jogo =[jogadores]
 
 let pontosJogador = 0
 let pontosPc = 0
